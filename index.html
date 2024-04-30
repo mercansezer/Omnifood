@@ -6,6 +6,7 @@
     <title>Omnifood</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
       rel="stylesheet"
@@ -14,6 +15,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+    <script defer src="script/script.js"></script>
+   
   </head>
   <body>
     <header class="header">
@@ -27,6 +30,11 @@
           <li><a href="#" class="main-nav-link nav-cta">Try for free</a></li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <i class="fa-solid fa-bars fa-3x icon-mobile-nav"  name="menu-outline"></i>
+        <i class="fa-solid fa-xmark fa-3x icon-mobile-nav" name="close-outline"></i>
+      </button>
+    
     </header>
     <main>
       <section class="section-hero">
@@ -105,7 +113,7 @@
             <img
               src="img/app/app-screen-1.png"
               alt="İphone app preferences selection screen"
-              class="step-img"
+              class="step-img step-img-1"
             />
           </div>
           <!-- STEP 2  -->
@@ -506,24 +514,23 @@
       </section>
 
       <section class="section-cta">
-        <div class="container cta-grid">
+        <div class="container">
           <div class="cta">
             <div class="cta-text-box">
-              <h2 style="margin-bottom: 2rem" class="heading-secondary">
-                Get your first meal for free!
-              </h2>
+              <h2 class="heading-secondary">Get your first meal for free!</h2>
               <p class="cta-text">
                 Healthy, tasty and hassle-free meals are waiting for you. Start
                 eating well today. You can cancel or pause anytime. And the
                 first meal is on us!
               </p>
+
               <form class="cta-form" action="#">
                 <div>
                   <label for="full-name">Full Name</label>
                   <input
                     id="full-name"
                     type="text"
-                    placeholder="Sezer Mercan"
+                    placeholder="John Smith"
                     required
                   />
                 </div>
@@ -540,7 +547,6 @@
 
                 <div>
                   <label for="select-where">Where did you hear from us?</label>
-
                   <select id="select-where" required>
                     <option value="">Please choose one option:</option>
                     <option value="friends">Friends and family</option>
@@ -550,11 +556,13 @@
                     <option value="others">Others</option>
                   </select>
                 </div>
+
                 <button class="btn btn--form">Sign up now</button>
+
+                <!-- <input type="checkbox" />
+                <input type="number" /> -->
               </form>
             </div>
-          </div>
-          <div class="img">
             <div
               class="cta-img-box"
               role="img"

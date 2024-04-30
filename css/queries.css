@@ -1,0 +1,256 @@
+@media (max-width: 84rem) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero {
+    max-width: 120rem;
+  }
+  .hero-description {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .heading-primary {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  .hero-description {
+    font-size: 2.4rem;
+  }
+  .testimonials-container {
+    padding: 4rem;
+  }
+  .testimonial-text {
+    font-size: 2.1rem;
+  }
+
+  .testimonial-name {
+    font-size: 2.1rem;
+  }
+  .delivered-imgs img {
+    height: 3.8rem;
+    width: 3.8rem;
+  }
+  .cta-text {
+    font-size: 2.4rem;
+  }
+  .cta-form label {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 5.2rem;
+  }
+  .hero-text-box {
+    text-align: center;
+  }
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+  .hero-img-box {
+    text-align: center;
+  }
+  .hero-img {
+    width: 50%;
+  }
+
+  .container {
+    max-width: 100rem;
+  }
+  .heading-tertiary {
+    font-size: 2.3rem;
+  }
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+  .testimonials {
+    display: grid;
+    column-gap: 3rem;
+  }
+  .testimonial-text {
+    font-size: 2.3rem;
+  }
+  .testimonial-name {
+    font-size: 2.3rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .pricing-plan {
+    padding: 2rem;
+  }
+  .pricing--plan--starter {
+    margin-left: 1.5rem;
+  }
+  .pricing--plan--complete {
+    margin-right: 1.5rem;
+  }
+  .pricing--plan--complete::after {
+    right: -24%;
+  }
+  .list-item {
+    font-size: 2.1rem;
+  }
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+  .btn--form {
+    margin-top: 1.2rem;
+  }
+
+  /* MOBILE */
+  .btn-mobile-nav {
+    display: block;
+  }
+  .main-nav {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.97);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+  }
+  .main-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    text-align: center;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+}
+@media (max-width: 49em) {
+  .grid--meals {
+    grid-template-columns: 1fr 1fr;
+  }
+  .diets {
+    grid-column: 1/ -1;
+    justify-self: center;
+  }
+  .feature-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+  .feature {
+    padding: 5rem 0 5rem 0;
+  }
+  .feature-title {
+    font-size: 3rem;
+  }
+  .feature-text {
+    font-size: 2.3rem;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .footer-logo {
+    grid-column: span 3;
+  }
+  .footer-contact {
+    grid-column: span 3;
+  }
+  .footer-account {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+  .footer-company {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+  .footer-resources {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+  .pricing--plan--complete {
+    margin-top: 4rem;
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .container {
+  }
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+  .grid--meals {
+    grid-template-columns: 1fr;
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .pricing-flex {
+    display: block;
+  }
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+  .feature {
+    padding: 5rem 0 5rem 0;
+  }
+  .cta {
+    grid-template-columns: 1fr;
+  }
+  .logos img {
+    height: 1.5rem;
+  }
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+  .cta-img-box {
+    min-height: 32rem;
+    grid-row: 1;
+  }
+  .pricing--plan--complete {
+    margin-top: 4rem;
+    margin-left: 1rem;
+  }
+  .plan-details {
+    padding: 0 3rem;
+    font-size: 1.9rem;
+  }
+  .delivered-imgs img {
+    height: 3.4rem;
+    width: 3.4rem;
+  }
+}
