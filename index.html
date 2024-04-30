@@ -16,18 +16,23 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <script defer src="script/script.js"></script>
+    <link rel="icon" href="img/favicon.png" />
+    <meta name="description" content="Omnifood offers a convenient way to order healthy meals online. Explore a variety of nutritious options and enjoy hassle-free meal delivery to your doorstep. Discover a world of flavorful and wholesome dishes designed to fit your lifestyle.">
+  
    
   </head>
   <body>
     <header class="header">
+      <a href="#">
       <img class="logo" src="img/omnifood-logo.png" alt="Omnifood logo" />
+    </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#" class="main-nav-link">How it works</a></li>
-          <li><a href="#" class="main-nav-link">Meals</a></li>
-          <li><a href="#" class="main-nav-link">Testimonials</a></li>
-          <li><a href="#" class="main-nav-link">Pricing</a></li>
-          <li><a href="#" class="main-nav-link nav-cta">Try for free</a></li>
+          <li><a href="#how" class="main-nav-link">How it works</a></li>
+          <li><a href="#meals" class="main-nav-link">Meals</a></li>
+          <li><a href="#testimonials" class="main-nav-link">Testimonials</a></li>
+          <li><a href="#pricing" class="main-nav-link">Pricing</a></li>
+          <li><a href="#cta" class="main-nav-link nav-cta">Try for free</a></li>
         </ul>
       </nav>
       <button class="btn-mobile-nav">
@@ -48,8 +53,8 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn btn-start">Start eating well</a>
-            <a href="#" class="btn btn-information">Learn more &darr;</a>
+            <a href="#cta" class="btn btn-start">Start eating well</a>
+            <a href="#how" class="btn btn-information">Learn more &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-imgs">
                 <img src="img/customers/customer-1.jpg" alt="Customer Photo" />
@@ -87,7 +92,7 @@
           </div>
         </div>
       </section>
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="subheading">How it works</span>
           <h2 class="heading-secondary">
@@ -96,7 +101,7 @@
         </div>
 
         <!-- STEP 1  -->
-        <div class="container grid">
+        <div class="container grid" id="meals">
           <div class="step-text-box">
             <p class="step-number">01</p>
             <h3 class="heading-tertiary">
@@ -257,7 +262,7 @@
         </div>
       </section>
 
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <div class="testimonials-container">
           <span class="subheading">Testimonials</span>
           <h2 class="heading-secondary">Once you try it, you can't go back</h2>
@@ -404,7 +409,7 @@
           </figure>
         </div>
       </section>
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container">
           <span class="subheading">Pricing</span>
           <h2 class="heading-secondary">
@@ -438,7 +443,7 @@
               </li>
             </ul>
             <div class="plan-sign-up">
-              <a href="#" class="btn btn-start">Start eating well</a>
+              <a href="#cta" class="btn btn-start">Start eating well</a>
             </div>
           </div>
 
@@ -467,7 +472,7 @@
               </li>
             </ul>
             <div class="plan-sign-up">
-              <a href="#" class="btn btn-start">Start eating well</a>
+              <a href="#cta" class="btn btn-start">Start eating well</a>
             </div>
           </div>
         </div>
@@ -513,7 +518,7 @@
         </div>
       </section>
 
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">

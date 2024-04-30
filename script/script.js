@@ -1,24 +1,59 @@
-const btnMobile = document.querySelector(".btn-mobile-nav");
-const btnMobileOpen = document.querySelector(
-  '.icon-mobile-nav[name="menu-outline"]'
-);
-const btnMobileClose = document.querySelector(
-  '.icon-mobile-nav[name="close-outline"]'
-);
-const nav = document.querySelector(".main-nav");
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
 
-btnMobile.addEventListener("click", function (e) {
-  const name = e.target.getAttribute("name");
-  if (!name) return;
-
-  if (name === "menu-outline") {
-    btnMobileOpen.style.display = "none";
-    btnMobileClose.style.display = "block";
-    nav.style.transform = "translateX(0%)";
-  }
-  if (name === "close-outline") {
-    btnMobileOpen.style.display = "block";
-    btnMobileClose.style.display = "none";
-    nav.style.transform = "translateX(100%)";
-  }
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
 });
+
+//SCROLLING BEHAVIOUR
+const allLinks = document.querySelectorAll("a:link");
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const href = link.getAttribute("href");
+
+    if (href === "#") {
+      //scroll back to top
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+
+    //scroll to other links
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+
+    //CLOSE MOBILE NAV
+    if (link.classList.contains("main-nav-link")) {
+      headerEl.classList.toggle("nav-open");
+    }
+  });
+});
+
+//STICKY NAVIGATION
+
+const sectionHeroEl = document.querySelector(".section-hero");
+
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    console.log(ent);
+    if (!ent.isIntersecting) {
+      document.body.classList.add("sticky");
+    }
+    if (ent.isIntersecting) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+obs.observe(sectionHeroEl);
