@@ -87,10 +87,10 @@
 }
 
 .delivered-imgs img {
-  height: 4.8rem;
-  max-width: 4.8rem;
+  height: 3rem;
+  max-width: 3rem;
   border-radius: 50%;
-  margin-right: -1.8rem;
+  margin-right: -1.5rem;
   border: 3px solid #fdf2e9;
 }
 .delivered-imgs img:last-child {
@@ -98,7 +98,7 @@
 }
 
 .delivered-text {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 .delivered-text span {
@@ -133,6 +133,7 @@
 .logos {
   text-align: center;
   display: flex;
+  gap: 0.4rem;
   justify-content: space-around;
 }
 .logos img {
